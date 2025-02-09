@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<@* div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Imagen 1 -->
+        <div class="carousel-item active">
+            <img src="/images/aguila.jpg" class="d-block" alt="Imagen 1" width="1100" height="400">
+        </div>
+        <!-- Imagen 2 -->
+        <div class="carousel-item">
+            <img src="/images/mariposa.jpg" class="d-block" alt="Imagen 2" width="1100" height="400">
+        </div>
+        <!-- Imagen 3 -->
+        <div class="carousel-item">
+            <img src="/images/oso.jpg" class="d-block" alt="Imagen 3" width="1100" height="400">
+        </div>
+        <!-- Imagen 4 -->
+        <div class="carousel-item">
+            <img src="/images/rinoceronte.jpg" class="d-block" alt="Imagen 4" width="1100" height="400">
+        </div>
+        <!-- Imagen 5 -->
+        <div class="carousel-item">
+            <img src="/images/tigre.webp" class="d-block" alt="Imagen 5" width="1100" height="400">
+        </div>
+    </div>
+    <!-- Controles del Carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+@* Seccion de video *@
+<div class="container mt-5">
+    <h2>Videos de Nuestros Animales</h2>
+    <div class="row">
+        <!-- Video 1 -->
+        <div class="col-md-4">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/ahHl2MoLc4g?si=VwQSetsPEZUNUEkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Video 2 -->
+        <div class="col-md-4">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/MPDVLdj6sLY?si=wfrSp3Dak8Lf8zIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Video 3 -->
+        <div class="col-md-4">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/fjDK1ozyI9k?si=y92oCdI08DcGg7R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <!-- Video 4 -->
+        <div class="col-md-4">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/orty3xaWbW4?si=5yx5EfTENm0LM9ya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- Video 5 -->
+        <div class="col-md-4">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/c-VavlRfEm4?si=xai3OtxTyIWPGETv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2>Quiénes Somos</h2>
+    <p>
+        Somos una ONG dedicada al rescate y cuidado de animales en situación de abandono. Nuestra misión es brindarles una segunda oportunidad y encontrarles un hogar lleno de amor.
+    </p>
+</div>
+
+<div class="container mt-5 text-center">
+    <a href="/Donativos" class="btn btn-primary btn-lg">Haz un Donativo</a>
+</div>

@@ -1,0 +1,104 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    background-image: url('/images/naturaleza.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+    color: #fff; /* Color del texto para que contraste con el fondo */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+. /* Estilos para el Navbar */
+.navbar {
+    background-color: #228B22 !important; /* Verde bosque semitransparente */
+    border-bottom: 2px solid #8B4513; /* Borde marrón */
+}
+
+/* Estilos para el texto del Navbar */
+.navbar-brand, .navbar-nav .nav-link {
+    color: #FFFFFF !important; /* Texto blanco */
+}
+
+    /* Efecto al pasar el mouse sobre los enlaces */
+    .navbar-nav .nav-link:hover {
+        color: #FFD700 !important; /* Texto dorado al pasar el mouse */
+    }
+
+/* Estilos para el botón del menú en dispositivos móviles */
+.navbar-toggler {
+    border-color: #32CD32; /* Borde blanco */
+}
+
+
+
+
+.btn-primary {
+    background-color: #228B22; /* Verde bosque */
+    border-color: #8B4513; /* Borde marrón */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+    .btn-primary:hover {
+        background-color: #32CD32; /* Verde lima al pasar el mouse */
+        border-color: #8B4513;
+    }
+
+
+
+.carousel {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #228B22; /* Verde bosque */
+    border-radius: 50%; /* Iconos redondeados */
+}
+
+
+footer {
+    background-color: #228B22 !important; /* Verde bosque */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+    footer a {
+        color: #FFD700; /* Enlaces dorados */
+    }
+
+        footer a:hover {
+            color: #32CD32; /* Verde lima al pasar el mouse */
+        }
