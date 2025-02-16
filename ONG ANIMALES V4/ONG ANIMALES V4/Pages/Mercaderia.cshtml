@@ -1,0 +1,78 @@
+﻿@page
+@model ONG_ANIMALES_V4.Pages.MercaderiaModel
+@{
+    ViewData["Title"] = "Mercadería";
+}
+
+<!-- Contenido de la subpagina-->
+<div class="container mt-5">
+    <h2>Mercadería</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="/images/camisa-animal.webp" class="card-img-top" alt="Camiseta">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">¡Oferta!</span>
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta de la ONG</h5>
+                    <p class="card-text">Camiseta de algodón con el logo de la ONG. Disponible en varios colores.</p>
+                    <p class="card-text"><strong>$20.00</strong></p>
+                    <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </div>
+                    <select class="form-select mb-3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                        <a href="#" class="btn btn-success">Agregar al Carrito</a>
+                        <a href="#" class="btn btn-outline-danger">
+                            <i class="fas fa-heart"></i> Favoritos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="/images/taza-animales.webp" class="card-img-top" alt="Taza">
+                <div class="card-body">
+                    <h5 class="card-title">Taza de la ONG</h5>
+                    <p class="card-text">Taza de cerámica con el logo de la ONG. Ideal para regalos.</p>
+                    <p class="card-text"><strong>$10.00</strong></p>
+                    <div class="rating mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </div>
+                    <select class="form-select mb-3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                        <a href="#" class="btn btn-success">Agregar al Carrito</a>
+                        <a href="#" class="btn btn-outline-danger">
+                            <i class="fas fa-heart"></i> Favoritos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repite para los otros productos -->
+    </div>
+</div>

@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ONG_ANIMALES_V4.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
             <div class="container-fluid">
-                <!-- Logo que redirige al inicio -->
+                <!-- Logo -->
                 <a class="navbar-brand" asp-page="/Index">
                     <img src="/images/animeales en extincion.webp" alt="Logo ONG" width="50" height="50">
                 </a>
@@ -29,16 +30,19 @@
                             <a class="nav-link" asp-page="/Opcion1">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Opcion2">Videos</a>
+                            <a class="nav-link" asp-page="/Opcion2">Animales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Opcion3">Mas animales</a>
+                            <a class="nav-link" asp-page="/Opcion3">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Opcion4">Noticias</a>
+                            <a class="nav-link" asp-page="/Mercaderia">Mercaderia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Opcion5">Registrate</a>
+                            <a class="nav-link" asp-page="/Opcion5">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Opcion6">Donativos</a>
                         </li>
                     </ul>
                 </div>
@@ -64,19 +68,27 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 
-    <footer class=bg-dark text-white text-center text-lg-start mt-5">
-        <div class="container p-4">
+    <footer class="bg-green text-center text-lg-start container-fluid">
+        <div class="container p-3">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5>Derechos Reservados</h5>
-                    <p>© 2023 ONG de Animales. Todos los derechos reservados.</p>
+                    <h5 class="text-white">Derechos Reservados</h5>
+                    <p class="text-white">© 2023 ONG de Animales. Todos los derechos reservados.</p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5>Redes Sociales</h5>
-                    <a href="https://facebook.com" class="me-3">Facebook</a>
-                    <a href="https://twitter.com" class="me-3">Twitter</a>
-                    <a href="https://youtube.com" class="me-3">YouTube</a>
-                    <a href="https://instagram.com">Instagram</a>
+                    <h5 class="text-white">Redes Sociales</h5>
+                    <a href="https://facebook.com" class="me-3 text-warning">
+                        <i class="fab fa-facebook fa-2x"></i> <!-- Icono de Facebook -->
+                    </a>
+                    <a href="https://twitter.com" class="me-3 text-warning">
+                        <i class="fab fa-twitter fa-2x"></i> <!-- Icono de Twitter -->
+                    </a>
+                    <a href="https://youtube.com" class="me-3 text-warning">
+                        <i class="fab fa-youtube fa-2x"></i> <!-- Icono de YouTube -->
+                    </a>
+                    <a href="https://instagram.com" class="text-warning">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- Icono de Instagram -->
+                    </a>
                 </div>
             </div>
         </div>
