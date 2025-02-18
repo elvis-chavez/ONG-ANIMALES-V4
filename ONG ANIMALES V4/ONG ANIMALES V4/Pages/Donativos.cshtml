@@ -1,0 +1,227 @@
+﻿@page
+@model ONG_ANIMALES_V4.Pages.DonativosModel
+@{
+	ViewData["Title"] = "Donativos";
+}
+
+@* Empezado por Rodrigo Alexander Valiente Ibarra *@
+
+<div class="container">
+    <h1>Apoya nuestra causa</h1>
+    @* formulario de donacion *@
+    <form id="donationForm">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="amount">Cantidad:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+   @*      opciones para como queres donar *@
+        <label for="donationType">Tipo de Donación:</label>
+        <select id="donationType" name="donationType">
+            <option value="one-time">Única vez</option>
+            <option value="monthly">Mensual</option>
+            <option value="partner">Ser socio</option>
+        </select>
+        @* opciones de pago pero con iconos *@
+        <p>Selecciona un método de pago:</p>
+        <div class="payment-options">
+            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard"></button>
+            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"></button>
+            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"></button>
+        </div>
+    </form>
+
+    @* seccion de adopcion *@
+    <div class="container adoption-section">
+        <h2>Adopta una Mascota</h2>
+        @* Empeiezan los Cards *@
+        <div class="adoption-cards">
+            <div class="card">
+                <img src="https://placedog.net/250/200" alt="Luna">
+                <h3>Luna</h3>
+                <p>Raza: Labrador Retriever</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXXa3kjj1GcP_cowvEMEXTC95wibezcin_9eI2LI4DofpCrkiOMOx5nAFMQskusysPiyYta5EhT5wz4XHmw8iPnQ" alt="Milo">
+                <h3>Milo</h3>
+                <p>Raza: Gato Siamés</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://www.hogarmania.com/archivos/202207/pastor-ganadero-australiano-1280x720x80xX.jpg" alt="Trevor">
+                <h3>Trevor</h3>
+                <p>Raza: Pastor Australiano</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://www.zooplus.es/magazine/wp-content/uploads/2017/10/fotolia_103481419.jpg" alt="Mimi">
+                <h3>Mimi</h3>
+                <p>Raza: Gato persa</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_721191-MLM48344791135_112021-O.jpg" alt="Chispa">
+                <h3>Chispa</h3>
+                <p>Raza: Chihuahua</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://gatos.plus/wp-content/uploads/2020/05/gato-ragdoll.jpg" alt="Loki">
+                <h3>Loki</h3>
+                <p>Raza: Gato ragdoll</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://images.ctfassets.net/denf86kkcx7r/7wwUpx3BZ8KQSX2TZrd2E9/b92b888ebf67551a221a319116cde2be/border_collie_seguro_santevet-21" alt="Maverick">
+                <h3>Maverick</h3>
+                <p>Raza: Border Collie</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://es.zooexperte.com/image/cache/catalog/Der%20Zoo%20Exsperte/Blog/birma-katze-katzenfutter-und-rasseportrait_2-w1170-h688.jpg" alt="Sasha">
+                <h3>Sasha</h3>
+                <p>Raza: Gato birmano</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://cdn0.expertoanimal.com/es/posts/4/7/7/nombres_para_perros_golden_retriever_20774_orig.jpg" alt="Sandy">
+                <h3>Sandy</h3>
+                <p>Raza: Golden Retriever</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            <div class="card">
+                <img src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/animal/breed/cat/adult/6683c532727eb339850517.jpg" alt="Cole">
+                <h3>Cole</h3>
+                <p>Raza: Gato bombay</p>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" required>
+                    <label>Apellido:</label>
+                    <input type="text" required>
+                    <label>Correo:</label>
+                    <input type="email" required>
+                    <label>Número de celular:</label>
+                    <input type="tel" required>
+                    <label>Dirección:</label>
+                    <input type="text" required>
+                    <button type="submit">Adoptar</button>
+                </form>
+            </div>
+            @* Terminan Los cards de adopcion *@
+        </div>
+    </div>
+    <p>Gracias por tu apoyo.</p>
+</div>
+@* Terminado por Rodrigo Alexander Valiente Ibarra *@
