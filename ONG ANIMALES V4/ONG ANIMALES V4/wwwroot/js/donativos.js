@@ -1,4 +1,9 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+﻿/**
+ * Bug al hacer donacion o adoptar.
+ * EL alert() salta dos veces
+ */
+
+document.addEventListener("DOMContentLoaded", () => {
     const donationForm = document.getElementById("donationForm");
     const paymentButtons = document.querySelectorAll(".payment-options button");
 
