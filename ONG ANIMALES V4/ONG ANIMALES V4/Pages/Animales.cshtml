@@ -1,0 +1,29 @@
+﻿@page
+@model ONG_ANIMALES_V4.Pages.AnimalesModel
+@{
+    ViewData["Title"] = "Animales";
+}
+
+<h1>Nuestros Animales</h1>
+<div class="carousel-container">
+    <button class="carousel-nav" onclick="prevAnimalSlide()">⬅️</button>
+    <div class="animal-carousel">
+        <div class="animal-carousel-container" id="animalCarouselContainer">
+            <img src="https://media.istockphoto.com/id/1329395771/es/foto/motmot-turquesa-ceja-superciliosa-de-eumomota-tambi%C3%A9n-torogoz-p%C3%A1jaro-tropical-colorido.jpg?s=612x612&w=0&k=20&c=QapKYcm7-0bF1t3RA4XAPKhXqH7OzQ1pDlZwVGblqU0=" alt="torogoz" onclick="playSound('torogoz')" data-info="El torogoz, guardabarranco, tolobojo ceja-turquesa, pájaro toho momoto cejiazul (Eumomota superciliosa) es una especie de ave coraciforme de la familia Momotidae que habita en Centroamérica desde la península de Yucatán hasta Panamá y es el ave nacional de El Salvador y Nicaragua. Debido a la forma y movimiento de su cola, similar a un péndulo, también es conocido como pájaro reloj.">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOITwx3GVbVGLK8dCXV-5AvoZukLZ-rkiog&s" alt="ocelote" onclick="playSound('ocelote')" data-info="El ocelote es una especie de mamífero carnívoro de la familia Felidae.​ Se encuentra ampliamente distribuido en América, principalmente en ambientes tropicales, donde se diferencia en numerosas subespecies.​ Puede confundirse con el margay o tigrillo.">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Zorrito_Chile.JPG" alt="zorrogris" onclick="playSound('zorrogris')" data-info="El zorro gris es una especie de mamífero carnívoro de la familia Canidae distribuida por el continente americano, desde el sur de Canadá a Venezuela. Se trata de una de las dos especies actuales agrupadas dentro del género Urocyon, el cual es autóctono de Norteamérica. ">
+        </div>
+    </div>
+    <button class="carousel-nav" onclick="nextAnimalSlide()">➡️</button>
+</div>
+<div class="animal-buttons">
+    <button onclick="toggleAnimalInfo()">🔍 Info</button>
+</div>
+<div class="animal-info" id="animalInfo"></div>
+
+<audio id="torogoz" src="~/soundFile/torogoz.mp3"></audio>
+<audio id="ocelote" src="~/soundFile/ocelote.mp3"></audio>
+<audio id="zorrogris" src="~/soundFile/zorrogris.mp3"></audio>
+
+
+<script src="~/js/animales.js"></script>
