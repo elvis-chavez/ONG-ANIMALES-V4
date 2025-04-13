@@ -1,0 +1,299 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin: 0; /* Elimina el margen inferior y otros márgenes predeterminados */
+    padding: 0;
+}
+
+body {
+    background-image: url('/images/naturaleza.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+    color: #fff; /* Color del texto para que contraste con el fondo */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+/* Estilos para el Navbar */
+.navbar {
+    background-color: rgba(34, 139, 34, 0.8); /* Verde bosque con 80% de opacidad */ 
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el texto del Navbar */
+.navbar-brand, .navbar-nav .nav-link {
+    color: #FFFFFF !important; /* Texto blanco */
+    padding: 10px 15px; /* Ajusta el padding del texto */
+}
+
+    /* Efecto al pasar el mouse sobre los enlaces */
+    .navbar-nav .nav-link:hover {
+        color: #FFD700 !important; /* Texto dorado al pasar el mouse */
+    }
+
+/* Estilos para el botón del menú en dispositivos móviles */
+.navbar-toggler {
+    border-color: #FFFFFF; /* Borde blanco */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Elimina el padding del contenedor */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+.btn-primary {
+    background-color: #228B22; /* Verde bosque */
+    border-color: #8B4513; /* Borde marrón */
+    color: #FFFFFF; /* Texto blanco */
+}
+
+    .btn-primary:hover {
+        background-color: #32CD32; /* Verde lima al pasar el mouse */
+        border-color: #8B4513;
+    }
+
+
+
+.carousel {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #228B22; /* Verde bosque */
+    border-radius: 50%; /* Iconos redondeados */
+}
+
+
+footer {
+    background-color: rgba(34, 139, 34, 0.8); /* Verde bosque con 80% de opacidad */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 30px 0; /* Espaciado interno */
+    margin-top: 30px; /* Margen superior */
+}
+
+    footer a {
+        color: #FFD700; /* Enlaces dorados */
+        text-decoration: none; /* Sin subrayado */
+    }
+
+        footer a:hover {
+            color: #32CD32; /* Verde lima al pasar el mouse */
+        }
+
+.fab:hover { /*esta pequeno codigo es de los iconos de redes sociales*/
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+
+.card-custom { /* color de fondo de la card*/
+    background-color: rgba(34, 139, 34, 0.8); /* Verde bosque con 80% de opacidad */
+}
+
+/*arreglo del borde*/
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+    .payment-options button {
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        border-radius: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    /*resalto de los iconos*/
+        .payment-options button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /*tamaño de los iconos*/
+    .payment-options img {
+        width: 60px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+label, input, select {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/*Empieza la seccion de css de label adopcion*/
+.adoption-section {
+    margin-top: 50px;
+}
+
+.adoption-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(34, 139, 34, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+/*Hace mas interactivo los cards y los ajusta de tamaño*/
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .card form {
+        margin-top: 10px;
+    }
+    /*Hace intreactivo el boton dentro del card*/
+    .card button {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background-color: #28a745;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    /*color al pasar el raton*/
+        .card button:hover {
+            background-color: #218838;
+        }
+      /*  Css de la pagina de quienes somos*/
+      /*Css defs las tarjetas de presentacion*/
+.team-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #333;
+}
+
+    .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .social-icons a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /*Css de asociones*/
+.associations {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.association-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+    .association-logos img {
+        width: 150px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+
+        .association-logos img:hover {
+            transform: scale(1.1);
+        }
